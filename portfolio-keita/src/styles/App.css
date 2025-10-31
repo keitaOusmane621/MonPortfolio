@@ -13,7 +13,7 @@
   --background: #ffffff;
   --background-light: #f8fafc;
   --border: #e5e7eb;
-  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-primary: linear-gradient(135deg, #667eea 0%, #45B7D1 100%);
   --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
   --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   --shadow-medium: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -112,6 +112,53 @@ html {
   color: white;
   position: relative;
   overflow: hidden;
+}
+/* Photo améliorée */
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: float 6s ease-in-out infinite;
+}
+
+.full-body-photo {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  filter: brightness(1.05) contrast(1.1);
+}
+
+.full-body-photo:hover {
+  transform: scale(1.02);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 30px 80px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+/* AJOUT : Désactiver COMPLÈTEMENT les animations pour l'image spécifique */
+.hero-image.static {
+  animation: none !important;
+}
+
+.full-body-photo.no-animation {
+  animation: none !important;
+  transition: none !important;
+}
+
+.full-body-photo.no-animation:hover {
+  transform: none !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(255, 255, 255, 0.1) !important;
 }
 
 .hero::before {
@@ -252,6 +299,20 @@ html {
   box-shadow: 
     0 30px 80px rgba(0, 0, 0, 0.4),
     0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+/* AJOUT : Désactiver les animations pour l'image spécifique */
+.full-body-photo.no-animation {
+  animation: none;
+  transition: none;
+}
+
+.full-body-photo.no-animation:hover {
+  transform: none;
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
 }
 
 /* Animations */
@@ -689,7 +750,7 @@ html {
 }
 
 .orange-text {
-  color: #ff6b35;
+  color: #ee4c11;
   background: linear-gradient(45deg, #ff6b35, #ff8e35);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

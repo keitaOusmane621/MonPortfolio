@@ -59,11 +59,12 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="hero-image">
+          {/* AJOUT de la classe 'static' sur la div parent et 'no-animation' sur l'image */}
+          <div className="hero-image static">
             <img 
               src="ousto.jpg" 
               alt="Keita Ousmane - Développeur Full Stack" 
-              className="full-body-photo"
+              className="full-body-photo no-animation"
             />
           </div>
         </div>
