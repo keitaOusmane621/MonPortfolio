@@ -6,7 +6,7 @@ const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   
-  const texts = ['Développeur Full Stack', 'Gestionnaire de Base de Données', 'Créateur de Solutions Digitales'];
+  const texts = ['Développeur Full Stack', 'Gestionnaire de Base de Données'];
   const currentText = texts[currentIndex];
   const typingSpeed = isDeleting ? 50 : 100;
   const pauseTime = 2000;
