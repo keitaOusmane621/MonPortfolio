@@ -10,8 +10,8 @@ const About = () => {
           <p>
              
              Je suis Keita Ousmane
-             étudiant en licence 4 au sein de L'institut Supérieur de Technologie de Mamou
-             département génie informatique. Passionné par le Développement Web ,basé à Conakry (Guinée) {portfolioData.personalInfo.location}  
+             diplômé en ingénierie informatique à l'Institut Supérieur de Technologie de Mamou.
+             Passionné par le numériques en général et Développement Web en particulier, basé à Conakry (Guinée) {portfolioData.personalInfo.location}  
               spécialisé dans la création d’applications web modernes, 
               performantes et intuitives.
               Grâce à une solide maîtrise du frontend et du backend,

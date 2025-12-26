@@ -94,10 +94,8 @@ export const portfolioData = {
 
   socialLinks: {
     linkedin: "https://linkedin.com/in/Ousmane Keita",
-    facebook: "https://facebook.com/keita kadiatou ousmane keita",
     telegram: "https://t.me/votre-username",
     instagram: "https://instagram.com/votre-username",
-    twitter: "https://twitter.com/votre-username",
     whatsapp: "https://wa.me/224621519897"
   }
 };
