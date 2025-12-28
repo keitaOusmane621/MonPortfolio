@@ -14,14 +14,11 @@ const Hero = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       if (!isDeleting && displayedText === currentText) {
-        // Pause avant de supprimer
         setTimeout(() => setIsDeleting(true), pauseTime);
       } else if (isDeleting && displayedText === '') {
-        // Passer au texte suivant
         setIsDeleting(false);
         setCurrentIndex((prev) => (prev + 1) % texts.length);
       } else {
-        // Typing ou deleting
         setDisplayedText(
           isDeleting 
             ? currentText.substring(0, displayedText.length - 1)
@@ -48,7 +45,7 @@ const Hero = () => {
             <div className="hero-buttons">
               <a href="#contact" className="cta-button primary">Me Contacter</a>
               <a 
-                href={`${process.env.PUBLIC_URL}/CV_V2.pdf`}
+                href={`${process.env.PUBLIC_URL}/CV_V3.pdf`}
                 download="MonCV.pdf"
                 className="cta-button secondary"
                 target="_blank"
@@ -59,7 +56,6 @@ const Hero = () => {
             </div>
           </div>
           
-          {/* AJOUT de la classe 'static' sur la div parent et 'no-animation' sur l'image */}
           <div className="hero-image static">
             <img 
               src="ousto.jpg" 
