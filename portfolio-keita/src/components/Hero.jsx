@@ -45,8 +45,8 @@ const Hero = () => {
             <div className="hero-buttons">
               <a href="#contact" className="cta-button primary">Me Contacter</a>
               <a 
-                href={`${process.env.PUBLIC_URL}/CV_V3.pdf`}
-                download="MonCV.pdf"
+                href={`${process.env.PUBLIC_URL}/CV4.pdf`}
+                download="CV4.pdf"
                 className="cta-button secondary"
                 target="_blank"
                 rel="noopener noreferrer"
