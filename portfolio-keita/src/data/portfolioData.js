@@ -10,23 +10,23 @@ export const portfolioData = {
 
   skills: {
     frontend: [
-      { name: "HTML/CSS", percentage: 95 },
-      { name: "JavaScript", percentage: 90 },
-      { name: "React", percentage: 80 }
+      { name: "HTML/CSS", percentage: 85 },
+      { name: "JavaScript", percentage: 75 },
+      { name: "React", percentage: 65 }
     ],
     backend: [
-      { name: "Node.js", percentage: 80 },
-      { name: "Express", percentage: 85 },
-      { name: "REST API", percentage: 85 },
-      { name: "MySQL", percentage: 95 },
-      { name: "SQL", percentage: 90 },
-      { name: "MongoDB", percentage: 80 },
-      { name: "SQL Server", percentage: 75 },
+      { name: "Node.js", percentage: 70 },
+      { name: "Express", percentage: 75 },
+      { name: "REST API", percentage: 65 },
+      { name: "MySQL", percentage: 90 },
+      { name: "SQL", percentage: 85 },
+      { name: "MongoDB", percentage: 85 },
+      { name: "SQL Server", percentage: 65 },
       { name: "Python", percentage: 30 }
     ],
     desktop: [
-      { name: "WinDev", percentage: 85 },
-      { name: "WinDev Mobile", percentage: 85 }
+      { name: "WinDev", percentage: 65 },
+      { name: "WinDev Mobile", percentage:50 }
     ],
     design: [
       { name: "Figma", percentage: 80 },
@@ -52,15 +52,15 @@ export const portfolioData = {
       id: 2,
       title: "Plateforme de Suivi des Demandes de Stage",
       description: "Système de gestion des demandes de stage pour établissements éducatifs",
-      technologies: ["React", "Express", "MySQL"],
-      status: "Terminé"
+      technologies: ["React", "Node.js", "MongoDB"],
+      status: "En cours"
     },
     {
       id: 3,
       title: "Application E-commerce",
       description: "Plateforme de vente en ligne avec panier et paiement",
       technologies: ["React", "Node.js", "MongoDB"],
-      status: "En cours"
+      status: "Terminé"
     },
     {
       id: 4,
