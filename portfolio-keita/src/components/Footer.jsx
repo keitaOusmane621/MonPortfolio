@@ -18,11 +18,11 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-info">
-            
+            {/* Vous pouvez ajouter du contenu ici si nécessaire */}
           </div>
           
           <div className="social-links-container">
-            <h4>Suivez-moi sur les réseaux</h4>
+            <h4 className="social-title">Suivez-moi sur les réseaux sociaux</h4>
             <div className="social-links">
               {socialLinks.linkedin && (
                 <a 
@@ -32,7 +32,7 @@ const Footer = () => {
                   className="social-link"
                   aria-label="LinkedIn"
                 >
-                  <FaLinkedin />
+                  <FaLinkedin className="social-icon" />
                   <span>LinkedIn</span>
                 </a>
               )}
@@ -45,7 +45,7 @@ const Footer = () => {
                   className="social-link"
                   aria-label="GitHub"
                 >
-                  <FaGithub />
+                  <FaGithub className="social-icon" />
                   <span>GitHub</span>
                 </a>
               )}
@@ -58,7 +58,7 @@ const Footer = () => {
                   className="social-link"
                   aria-label="Facebook"
                 >
-                  <FaFacebook />
+                  <FaFacebook className="social-icon" />
                   <span>Facebook</span>
                 </a>
               )}
@@ -71,7 +71,7 @@ const Footer = () => {
                   className="social-link"
                   aria-label="Telegram"
                 >
-                  <FaTelegram />
+                  <FaTelegram className="social-icon" />
                   <span>Telegram</span>
                 </a>
               )}
@@ -84,7 +84,7 @@ const Footer = () => {
                   className="social-link"
                   aria-label="Instagram"
                 >
-                  <FaInstagram />
+                  <FaInstagram className="social-icon" />
                   <span>Instagram</span>
                 </a>
               )}
@@ -97,7 +97,7 @@ const Footer = () => {
                   className="social-link"
                   aria-label="Twitter"
                 >
-                  <FaTwitter />
+                  <FaTwitter className="social-icon" />
                   <span>Twitter</span>
                 </a>
               )}
@@ -110,7 +110,7 @@ const Footer = () => {
                   className="social-link"
                   aria-label="WhatsApp"
                 >
-                  <FaWhatsapp />
+                  <FaWhatsapp className="social-icon" />
                   <span>WhatsApp</span>
                 </a>
               )}
@@ -119,7 +119,7 @@ const Footer = () => {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; 2025 {portfolioData.personalInfo.name}. Tous droits réservés.</p>
+          <p>&copy; 2025 {portfolioData.personalInfo?.name || 'Mon Portfolio'}. Tous droits réservés.</p>
         </div>
       </div>
     </footer>

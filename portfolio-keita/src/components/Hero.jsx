@@ -45,8 +45,8 @@ const Hero = () => {
             <div className="hero-buttons">
               <a href="#contact" className="cta-button primary">Me Contacter</a>
               <a 
-                href={`${process.env.PUBLIC_URL}/CV4.pdf`}
-                download="CV4.pdf"
+                href={`${process.env.PUBLIC_URL}/CV_keita.pdf`}
+                download="CV_keita.pdf"
                 className="cta-button secondary"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -56,12 +56,14 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="hero-image static">
-            <img 
-              src="ousto.jpg" 
-              alt="Keita Ousmane - Développeur Full Stack" 
-              className="full-body-photo no-animation"
-            />
+          <div className="hero-image">
+            <div className="profile-wrapper">
+              <img 
+                src="keita.jpg" 
+                alt="Keita Ousmane - Développeur Full Stack" 
+                className="profile-circle"
+              />
+            </div>
           </div>
         </div>
       </div>
