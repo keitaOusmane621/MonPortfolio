@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   --primary-color: #45B7D1;
   --secondary-color: #45B7D1;
